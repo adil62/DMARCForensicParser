@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/DMARCForensicParser.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/DMARCForensicParser.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/DMARCForensicParser.Tests.csproj",
+        "projectName": "DMARCForensicParser.Tests",
+        "projectPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/DMARCForensicParser.Tests.csproj",
+        "packagesPath": "/Users/adilismail/.nuget/packages/",
+        "outputPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/adilismail/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {
+                "projectPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
+        "projectName": "DMARCForensicParser",
+        "projectPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
+        "packagesPath": "/Users/adilismail/.nuget/packages/",
+        "outputPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/adilismail/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

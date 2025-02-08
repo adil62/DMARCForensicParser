@@ -1,0 +1,12 @@
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/bin/Debug/net8.0/DMARCForensicParser.deps.json
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/bin/Debug/net8.0/DMARCForensicParser.dll
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/bin/Debug/net8.0/DMARCForensicParser.pdb
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.AssemblyInfoInputs.cache
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.AssemblyInfo.cs
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.csproj.CoreCompileInputs.cache
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.dll
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/refint/DMARCForensicParser.dll
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.pdb
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/ref/DMARCForensicParser.dll
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.csproj.AssemblyReference.cache
