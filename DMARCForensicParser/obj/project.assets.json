@@ -205,7 +205,7 @@
     "/Users/adilismail/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.2",
     "restore": {
       "projectUniqueName": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
       "projectName": "DMARCForensicParser",

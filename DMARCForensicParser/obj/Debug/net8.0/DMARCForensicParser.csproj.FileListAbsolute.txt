@@ -10,3 +10,4 @@
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.pdb
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/ref/DMARCForensicParser.dll
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.csproj.AssemblyReference.cache
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/Debug/net8.0/DMARCForensicParser.sourcelink.json

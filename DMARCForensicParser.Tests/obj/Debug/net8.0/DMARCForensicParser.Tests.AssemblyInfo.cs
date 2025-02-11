@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMARCForensicParser.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+922e51f0f4ba76e9419cc531caecf8d689fe33d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMARCForensicParser.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMARCForensicParser.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

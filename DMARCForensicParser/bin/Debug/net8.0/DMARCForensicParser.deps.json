@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "DMARCForensicParser/1.0.0": {
+      "DMARCForensicParser/1.0.2": {
         "dependencies": {
           "MimeKit": "4.10.0"
         },
@@ -62,7 +62,7 @@
     }
   },
   "libraries": {
-    "DMARCForensicParser/1.0.0": {
+    "DMARCForensicParser/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

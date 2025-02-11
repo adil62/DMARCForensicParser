@@ -104,4 +104,6 @@
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/obj/Debug/net8.0/DMARCForensicParser.Tests.pdb
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/obj/Debug/net8.0/DMARCForensicParser.Tests.genruntimeconfig.cache
 /Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/obj/Debug/net8.0/ref/DMARCForensicParser.Tests.dll
-/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/bin/Debug/net8.0/TestData/test.eml
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/obj/Debug/net8.0/DMARCForensicParser.Tests.sourcelink.json
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/bin/Debug/net8.0/TestData/email-1.eml
+/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser.Tests/bin/Debug/net8.0/TestData/email-2.eml

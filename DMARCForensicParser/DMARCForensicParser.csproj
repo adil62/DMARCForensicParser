@@ -6,8 +6,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>DMARCForensicParser</PackageId>
+    <Version>1.0.2</Version>
+    <Authors>adil</Authors>
+    <Company></Company>
+    <Description>A .NET library for parsing DMARC forensic reports.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/adil62/DMARCForensicParser</RepositoryUrl>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="MimeKit" Version="4.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+      <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>
