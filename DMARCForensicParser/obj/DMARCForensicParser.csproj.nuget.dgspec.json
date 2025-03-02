@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {}
+    "/Users/adilpersonal/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {}
   },
   "projects": {
-    "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {
+    "/Users/adilpersonal/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj": {
       "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
+        "projectUniqueName": "/Users/adilpersonal/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
         "projectName": "DMARCForensicParser",
-        "projectPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
-        "packagesPath": "/Users/adilismail/.nuget/packages/",
-        "outputPath": "/Users/adilismail/projects/DMARCForensicParser/DMARCForensicParser/obj/",
+        "projectPath": "/Users/adilpersonal/projects/DMARCForensicParser/DMARCForensicParser/DMARCForensicParser.csproj",
+        "packagesPath": "/Users/adilpersonal/.nuget/packages/",
+        "outputPath": "/Users/adilpersonal/projects/DMARCForensicParser/DMARCForensicParser/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/adilismail/.nuget/NuGet/NuGet.Config"
+          "/Users/adilpersonal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

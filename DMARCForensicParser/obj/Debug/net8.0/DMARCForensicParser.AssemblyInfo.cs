@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A .NET library for parsing DMARC forensic reports.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+922e51f0f4ba76e9419cc531caecf8d689fe33d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+4960bd808c60c989e23adea8d1ca05b4a5c9df82")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMARCForensicParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMARCForensicParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]

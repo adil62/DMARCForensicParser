@@ -82,86 +82,115 @@ namespace DMARCForensicParser {
             using (var sr = new StringReader(message))
             {
                 string line;
+                string currentHeader = null;
+                string currentValue = string.Empty;
+
                 while ((line = sr.ReadLine()) != null) 
                 {
-                    var parts = line.Split(new[] { ':' }, 2);
-                    if (parts.Length == 2) 
+                    if (string.IsNullOrWhiteSpace(line))
                     {
-                        string key = parts[0].Trim();
-                        string value = parts[1].Trim();
+                        continue;
+                    }
 
-                        switch (key.ToLower()) 
+                    // Checks if continuation of the previous header
+                    if (char.IsWhiteSpace(line[0]) && currentHeader != null)
+                    {
+                        currentValue += " " + line.Trim();
+                    }
+                    else
+                    {
+                        if (currentHeader != null)
                         {
-                            case "user-agent":
-                                feedbackReport.UserAgent = value;
-                                break;
-                            case "version":
-                                feedbackReport.Version = value;
-                                break;
-                            case "original-mail-from":
-                                feedbackReport.OriginalMailFrom = value;
-                                break;
-                            case "original-envelope-id":
-                                feedbackReport.OriginalEnvelopeId = value;
-                                break;
-                            case "arrival-date":
-                                value = Regex.Replace(value, @"\s*\(.*\)$", "").Trim();
-                                string[] formats = { "ddd, d MMM yyyy HH:mm:ss zzz", "d MMM yyyy HH:mm:ss zzz" };
-                                feedbackReport.ArrivalDate = DateTime.ParseExact(
-                                    value, formats, 
-                                    CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal
-                                );
-                                break;
-                            case "authentication-results":
-                                feedbackReport.AuthenticationResults = value;
-                                break;
-                            case "source-ip":
-                                feedbackReport.SourceIP = value;
-                                break;
-                            case "reported-domain":
-                                feedbackReport.ReportedDomain = value;
-                                break;
-                            case "reported-uri":
-                                feedbackReport.ReportedURI = value;
-                                break;
-                            case "delivery-result":
-                                feedbackReport.DeliveryResult = value;
-                                break;
-                            case "auth-failure":
-                                feedbackReport.AuthFailure = value;
-                                break;
-                            
-                            case "dkim-domain":
-                                feedbackReport.DKIMDomain = value;
-                                break;
-                            case "dkim-identity":
-                                feedbackReport.DKIMIdentity = value;
-                                break;
-                            case "dkim-selector":
-                                feedbackReport.DKIMSelector = value;
-                                break;
-                            case "dkim-canonicalized-header":
-                                feedbackReport.DKIMCanonicalizedHeader = value;
-                                break;
-                            case "dkim-canonicalized-body":
-                                feedbackReport.DKIMCanonicalizedBody = value;
-                                break;
-                            case "dkim-selector-dns":
-                                feedbackReport.DKIMSelectorDNS = value;
-                                break;
+                            AssignHeaderValue(feedbackReport, currentHeader, currentValue);
+                        }
 
-                            case "spf-dns":
-                                feedbackReport.SPFDNS = value;
-                                break;
-                            
-                            default:
-                                break;
+                        var parts = line.Split(new[] { ':' }, 2);
+                        if (parts.Length == 2) 
+                        {
+                            currentHeader = parts[0].Trim();
+                            currentValue = parts[1].Trim();
                         }
                     }
+                }
+
+                if (currentHeader != null)
+                {
+                    AssignHeaderValue(feedbackReport, currentHeader, currentValue);
                 }
             }
 
             return feedbackReport;
+        }
+
+        private void AssignHeaderValue(FeedbackReport feedbackReport, string header, string value)
+        {
+            switch (header.ToLower()) 
+            {
+                case "user-agent":
+                    feedbackReport.UserAgent = value;
+                    break;
+                case "version":
+                    feedbackReport.Version = value;
+                    break;
+                case "original-mail-from":
+                    feedbackReport.OriginalMailFrom = value;
+                    break;
+                case "original-envelope-id":
+                    feedbackReport.OriginalEnvelopeId = value;
+                    break;
+                case "arrival-date":
+                    value = Regex.Replace(value, @"\s*\(.*\)$", "").Trim();
+                    string[] formats = { "ddd, d MMM yyyy HH:mm:ss zzz", "d MMM yyyy HH:mm:ss zzz" };
+                    feedbackReport.ArrivalDate = DateTime.ParseExact(
+                        value, formats, 
+                        CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal
+                    );
+                    break;
+                case "authentication-results":
+                    feedbackReport.AuthenticationResults = value;
+                    break;
+                case "source-ip":
+                    feedbackReport.SourceIP = value;
+                    break;
+                case "reported-domain":
+                    feedbackReport.ReportedDomain = value;
+                    break;
+                case "reported-uri":
+                    feedbackReport.ReportedURI = value;
+                    break;
+                case "delivery-result":
+                    feedbackReport.DeliveryResult = value;
+                    break;
+                case "auth-failure":
+                    feedbackReport.AuthFailure = value;
+                    break;
+                
+                case "dkim-domain":
+                    feedbackReport.DKIMDomain = value;
+                    break;
+                case "dkim-identity":
+                    feedbackReport.DKIMIdentity = value;
+                    break;
+                case "dkim-selector":
+                    feedbackReport.DKIMSelector = value;
+                    break;
+                case "dkim-canonicalized-header":
+                    feedbackReport.DKIMCanonicalizedHeader = value;
+                    break;
+                case "dkim-canonicalized-body":
+                    feedbackReport.DKIMCanonicalizedBody = value;
+                    break;
+                case "dkim-selector-dns":
+                    feedbackReport.DKIMSelectorDNS = value;
+                    break;
+
+                case "spf-dns":
+                    feedbackReport.SPFDNS = value;
+                    break;
+                
+                default:
+                    break;
+            }
         }
     }
 }
