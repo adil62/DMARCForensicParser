@@ -10,6 +10,11 @@ namespace DMARCForensicParser {
         public Result ReadForensicReport(Stream stream)
         {
             MimeMessage message = MimeMessage.Load(stream);
+            return ReadForensicReport(message);
+        }
+
+        public Result ReadForensicReport(MimeMessage message)
+        {
             Result result = new Result();
             result.Cc = string.Join(", ", message.Cc.Select(a => ((MailboxAddress)a).Address));
             result.From = string.Join(", ", message.From.Select(a => ((MailboxAddress)a).Address));

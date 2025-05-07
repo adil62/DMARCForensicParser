@@ -30,7 +30,7 @@ using System.IO;
 ForensicReportReader reader = new ForensicReportReader();
 using (FileStream stream = File.OpenRead("forensic_report.eml"))
 {
-    Result result = reader.ReadForensicReport(stream);
+    Result result = reader.ReadForensicReport(stream); // Stream or MimeMessage
     Console.WriteLine($"From: {result.From}");
     Console.WriteLine($"To: {result.To}");
     Console.WriteLine($"Date: {result.Date}");
@@ -104,4 +104,3 @@ public class RFC822
     public DateTime DateTime { get; set; }
     public string EmailTextBody { get; set; }
 }
-
